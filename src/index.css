@@ -12,3 +12,40 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+::-webkit-scrollbar { 
+    width: 0;
+}
+
+.page {
+  top: 64px;
+  width: 100%;
+  -webkit-overflow-scrolling: touch;
+  transition: transform 1s ease-in-out, box-shadow 1s ease-in-out;
+  overflow: hidden; 
+}
+
+.page-enter {
+  transform: translate(-100%, 0);
+}
+
+.page-enter-active {
+  transform: translate(0, 0);
+}
+
+.page-exit {
+  position: fixed;
+  transform: translate(-100%, 0);
+}
+
+.page--prev.page-enter {
+  transform: translate(100%, 0);
+}
+
+.page--prev.page-enter-active {
+  transform: translate(0, 0);
+}
+
+.page--prev.page-exit {
+  transform: translate(100%, 0);
+}

@@ -1,0 +1,36 @@
+nav {
+  background-color: #212121;
+  height: 64px;
+  color: #FFF;
+  display: flex;
+  align-items: center;
+}
+
+nav > h1 {
+  display: inline-block;
+  margin: 0 0 0 24px;
+}
+
+nav > .dropdown {
+  font-size: 2em;
+  text-align: left;
+  color: #ffffff;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: 15px;
+}
+
+.movies {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.movie-panel {
+  width: 100%;
+  cursor: pointer;
+}
+
+.movie-panel img {
+  width: 100%;
+  display: block;
+}
